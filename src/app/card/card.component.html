@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+  <img [src]="photo.url" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{photo.id}}</h5>
+    <p class="card-text">{{photo.title}}
+    </p>
+    <a href="#" class="btn btn-primary" (click)="like()">Mi piace</a>
+    <a href="#" class="btn btn-danger" (click)="del()">Elimina</a>
+  </div>
+</div>

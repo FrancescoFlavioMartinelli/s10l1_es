@@ -1,0 +1,5 @@
+<h1>Totale preferite: {{fav}}</h1>
+<app-card *ngFor="let p of photos" [photo]="p" (delEvent)="delete($event)"></app-card>
+
+<h2>Ultima carta eliminata</h2>
+<app-card [photo]="lastDeleted" *ngIf="lastDeleted"></app-card>
